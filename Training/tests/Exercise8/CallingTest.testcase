@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase>
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="2" title="Salesforce Connect: DemoOrg (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">DemoOrg</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">DemoOrg</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="vfDebug"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="environment"/>
+      </arguments>
+    </apiCall>
+    <caseCall testCaseId="c8bf5258-ecd8-4c21-8b38-fa7cde80661d" testItemId="1">
+      <arguments>
+        <argument id="Name">
+          <value class="value" valueClass="string">test</value>
+        </argument>
+        <argument id="StageName">
+          <value class="value" valueClass="string">Qualification</value>
+        </argument>
+        <argument id="Probability">
+          <value class="value" valueClass="decimal">20</value>
+        </argument>
+        <argument id="CloseDate">
+          <value class="value" valueClass="date">1425168000000</value>
+        </argument>
+      </arguments>
+      <outputArguments>
+        <outputArgument id="OpportunityId">
+          <name class="value" valueClass="string">OpportunityId</name>
+        </outputArgument>
+      </outputArguments>
+    </caseCall>
+  </steps>
+</testCase>

@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="9" registryId="f459922a-84cf-4b3d-b16b-a951448e709b" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="48" title="Salesforce Connect: EdmundsTest (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Sales</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="vfDebug"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="environment"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="124" title="Create Object: Account=&gt;AccountId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">AccountId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="Name">
+          <value class="funcCall" id="UniqueId"/>
+        </argument>
+        <argument id="Type">
+          <value class="value" valueClass="string">Dealership</value>
+        </argument>
+        <argument id="BillingStreet">
+          <value class="value" valueClass="string">1620 26th St</value>
+        </argument>
+        <argument id="BillingCity">
+          <value class="value" valueClass="string">Santa Monica</value>
+        </argument>
+        <argument id="BillingState">
+          <value class="value" valueClass="string">CA</value>
+        </argument>
+        <argument id="BillingPostalCode">
+          <value class="value" valueClass="string">90404</value>
+        </argument>
+        <argument id="ShippingStreet">
+          <value class="value" valueClass="string">1620 26th St</value>
+        </argument>
+        <argument id="ShippingCity">
+          <value class="value" valueClass="string">Santa Monica</value>
+        </argument>
+        <argument id="ShippingState">
+          <value class="value" valueClass="string">CA</value>
+        </argument>
+        <argument id="ShippingPostalCode">
+          <value class="value" valueClass="string">90404</value>
+        </argument>
+        <argument id="Phone">
+          <value class="value" valueClass="string">8888888888</value>
+        </argument>
+        <argument id="Website">
+          <value class="value" valueClass="string">http://www.edmunds.com/</value>
+        </argument>
+        <argument id="Dealership_ID__c">
+          <value class="value" valueClass="string">n/a</value>
+        </argument>
+        <argument id="Latitude__c">
+          <value class="value" valueClass="decimal">34.0294</value>
+        </argument>
+        <argument id="Longitude__c"/>
+        <argument id="Dealership_Status__c">
+          <value class="value" valueClass="string">Active</value>
+        </argument>
+        <argument id="DMA__c">
+          <value class="value" valueClass="string">LOS ANGELES</value>
+        </argument>
+        <argument id="T_Assigned_CSR__c">
+          <value class="value" valueClass="string">005A0000001oQXcIAM</value>
+        </argument>
+        <argument id="Region__c">
+          <value class="value" valueClass="string">Other Markets</value>
+        </argument>
+        <argument id="CSR_Team__c">
+          <value class="value" valueClass="string">TEAM 1</value>
+        </argument>
+        <argument id="Owner_Lookup__c">
+          <value class="value" valueClass="string">005A0000001oQXcIAM</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Global</value>
+        </argument>
+      </arguments>
+      <resultAssertions/>
+      <parameterValueSources/>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Type" name="Type" title="Type"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingStreet" name="BillingStreet" title="BillingStreet"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingCity" name="BillingCity" title="BillingCity"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingState" name="BillingState" title="BillingState"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingPostalCode" name="BillingPostalCode" title="BillingPostalCode"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=ShippingStreet" name="ShippingStreet" title="ShippingStreet"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=ShippingCity" name="ShippingCity" title="ShippingCity"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=ShippingState" name="ShippingState" title="ShippingState"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=ShippingPostalCode" name="ShippingPostalCode" title="ShippingPostalCode"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Phone" name="Phone" title="Phone"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Website" name="Website" title="Website"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Dealership_ID__c" name="Dealership_ID__c" title="Dealership_ID__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Latitude__c" name="Latitude__c" title="Latitude__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Longitude__c" name="Longitude__c" title="Longitude__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Dealership_Status__c" name="Dealership_Status__c" title="Dealership_Status__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=DMA__c" name="DMA__c" title="DMA__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=T_Assigned_CSR__c" name="T_Assigned_CSR__c" title="T_Assigned_CSR__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Region__c" name="Region__c" title="Region__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=CSR_Team__c" name="CSR_Team__c" title="CSR_Team__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Owner_Lookup__c" name="Owner_Lookup__c" title="Owner_Lookup__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexUpdateObject" name="ApexUpdateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand" testItemId="125" title="Update Object: Account = {AccountId}">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">AccountUpdated</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="Name">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Global</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Name"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="13" title="Create Object: Franchise__c=&gt;FranchiseIdNew">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Franchise__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">FranchiseIdNew</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="Name">
+          <value class="value" valueClass="string">ABC Dealer New</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">New</value>
+        </argument>
+        <argument id="Make__c">
+          <value class="value" valueClass="string">Honda</value>
+        </argument>
+        <argument id="Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="Franchise_Status__c">
+          <value class="value" valueClass="string">Active</value>
+        </argument>
+      </arguments>
+      <expectedExceptions/>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Franchise__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Make__c" name="Make__c" title="Make__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Dealership__c" name="Dealership__c" title="Dealership__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Franchise_Status__c" name="Franchise_Status__c" title="Franchise_Status__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="10" title="Create Object: Franchise__c=&gt;FranchiseIdUsed">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Franchise__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">FranchiseIdUsed</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="Name">
+          <value class="value" valueClass="string">ABC Dealer Used</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Used</value>
+        </argument>
+        <argument id="Make__c">
+          <value class="value" valueClass="string">Used</value>
+        </argument>
+        <argument id="Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="Franchise_Status__c">
+          <value class="value" valueClass="string">Active</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Franchise__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Make__c" name="Make__c" title="Make__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Dealership__c" name="Dealership__c" title="Dealership__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Franchise__c&amp;field=Franchise_Status__c" name="Franchise_Status__c" title="Franchise_Status__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="60" title="Create Object: PDP_TERRITORY__c=&gt;PDPTERRITORYId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">PDP_TERRITORY__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">PDPTERRITORYId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="Name">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="Franchise__c">
+          <value class="variable">
+            <path element="FranchiseIdNew"/>
+          </value>
+        </argument>
+        <argument id="Region_ID__c">
+          <value class="funcCall" id="UniqueId"/>
+        </argument>
+        <argument id="CDD_Franchise_ID__c"/>
+        <argument id="Make__c">
+          <value class="value" valueClass="string">Honda</value>
+        </argument>
+        <argument id="PDP_Full_Name__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">EdmundsTest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">PDP_TERRITORY__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=PDP_TERRITORY__c&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=PDP_TERRITORY__c&amp;field=Franchise__c" name="Franchise__c" title="Franchise__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=PDP_TERRITORY__c&amp;field=Region_ID__c" name="Region_ID__c" title="Region_ID__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=PDP_TERRITORY__c&amp;field=CDD_Franchise_ID__c" name="CDD_Franchise_ID__c" title="CDD_Franchise_ID__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=PDP_TERRITORY__c&amp;field=Make__c" name="Make__c" title="Make__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=PDP_TERRITORY__c&amp;field=PDP_Full_Name__c" name="PDP_Full_Name__c" title="PDP_Full_Name__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="16" title="Create Object: Sellable_Product__c=&gt;SP_New">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Sellable_Product__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">SP_New</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">New</value>
+        </argument>
+        <argument id="Conquest_Price__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="Default_Target__c">
+          <value class="value" valueClass="string">1</value>
+        </argument>
+        <argument id="Lead_Forecast_1__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_2__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_3__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_4__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_1__c">
+          <value class="value" valueClass="decimal">100</value>
+        </argument>
+        <argument id="List_Price_2__c">
+          <value class="value" valueClass="decimal">200</value>
+        </argument>
+        <argument id="List_Price_3__c">
+          <value class="value" valueClass="decimal">300</value>
+        </argument>
+        <argument id="List_Price_4__c">
+          <value class="value" valueClass="decimal">400</value>
+        </argument>
+        <argument id="Pipeline__c">
+          <value class="value" valueClass="string">Not Started</value>
+        </argument>
+        <argument id="Product_Type__c">
+          <value class="value" valueClass="string">PDP Home</value>
+        </argument>
+        <argument id="Status__c">
+          <value class="value" valueClass="string">Available</value>
+        </argument>
+        <argument id="Default_Radius__c">
+          <value class="value" valueClass="decimal">25.0</value>
+        </argument>
+        <argument id="Product_Make__c">
+          <value class="value" valueClass="string">Honda</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="Franchise__c">
+          <value class="variable">
+            <path element="FranchiseIdNew"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Sellable_Product__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Conquest_Price__c" name="Conquest_Price__c" title="Conquest_Price__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Dealership__c" name="Dealership__c" title="Dealership__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Target__c" name="Default_Target__c" title="Default_Target__c">
+          <summary>Which List Price (1 = first in list, 4= last in list) should be used as the default?</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_1__c" name="Lead_Forecast_1__c" title="Lead_Forecast_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_2__c" name="Lead_Forecast_2__c" title="Lead_Forecast_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_3__c" name="Lead_Forecast_3__c" title="Lead_Forecast_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_4__c" name="Lead_Forecast_4__c" title="Lead_Forecast_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_1__c" name="List_Price_1__c" title="List_Price_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_2__c" name="List_Price_2__c" title="List_Price_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_3__c" name="List_Price_3__c" title="List_Price_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_4__c" name="List_Price_4__c" title="List_Price_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Pipeline__c" name="Pipeline__c" title="Pipeline__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Type__c" name="Product_Type__c" title="Product_Type__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Status__c" name="Status__c" title="Status__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Radius__c" name="Default_Radius__c" title="Default_Radius__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Make__c" name="Product_Make__c" title="Product_Make__c">
+          <summary>The makes available for sale for the dealership</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Franchise__c" name="Franchise__c" title="Franchise__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="17" title="Create Object: Sellable_Product__c=&gt;SP_Used">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Sellable_Product__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">SP_Used</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Used</value>
+        </argument>
+        <argument id="Conquest_Price__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="Default_Target__c">
+          <value class="value" valueClass="string">1</value>
+        </argument>
+        <argument id="Lead_Forecast_1__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_2__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_3__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_4__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_1__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_2__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_3__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_4__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Pipeline__c">
+          <value class="value" valueClass="string">Not Started</value>
+        </argument>
+        <argument id="Product_Type__c">
+          <value class="value" valueClass="string">Used Inventory</value>
+        </argument>
+        <argument id="Status__c">
+          <value class="value" valueClass="string">Available</value>
+        </argument>
+        <argument id="Default_Radius__c">
+          <value class="value" valueClass="decimal">25.0</value>
+        </argument>
+        <argument id="Product_Make__c">
+          <value class="value" valueClass="string">Used</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="Franchise__c">
+          <value class="variable">
+            <path element="FranchiseIdUsed"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Sellable_Product__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Conquest_Price__c" name="Conquest_Price__c" title="Conquest_Price__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Dealership__c" name="Dealership__c" title="Dealership__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Target__c" name="Default_Target__c" title="Default_Target__c">
+          <summary>Which List Price (1 = first in list, 4= last in list) should be used as the default?</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_1__c" name="Lead_Forecast_1__c" title="Lead_Forecast_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_2__c" name="Lead_Forecast_2__c" title="Lead_Forecast_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_3__c" name="Lead_Forecast_3__c" title="Lead_Forecast_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_4__c" name="Lead_Forecast_4__c" title="Lead_Forecast_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_1__c" name="List_Price_1__c" title="List_Price_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_2__c" name="List_Price_2__c" title="List_Price_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_3__c" name="List_Price_3__c" title="List_Price_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_4__c" name="List_Price_4__c" title="List_Price_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Pipeline__c" name="Pipeline__c" title="Pipeline__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Type__c" name="Product_Type__c" title="Product_Type__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Status__c" name="Status__c" title="Status__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Radius__c" name="Default_Radius__c" title="Default_Radius__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Make__c" name="Product_Make__c" title="Product_Make__c">
+          <summary>The makes available for sale for the dealership</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Franchise__c" name="Franchise__c" title="Franchise__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="18" title="Create Object: Sellable_Product__c=&gt;SP_PricePromise">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Sellable_Product__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">SP_PricePromise</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Price Promise</value>
+        </argument>
+        <argument id="Conquest_Price__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="Default_Target__c">
+          <value class="value" valueClass="string">1</value>
+        </argument>
+        <argument id="Lead_Forecast_1__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_2__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_3__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_4__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_1__c">
+          <value class="value" valueClass="decimal">100</value>
+        </argument>
+        <argument id="List_Price_2__c">
+          <value class="value" valueClass="decimal">200</value>
+        </argument>
+        <argument id="List_Price_3__c">
+          <value class="value" valueClass="decimal">300</value>
+        </argument>
+        <argument id="List_Price_4__c">
+          <value class="value" valueClass="decimal">400</value>
+        </argument>
+        <argument id="Pipeline__c">
+          <value class="value" valueClass="string">Not Started</value>
+        </argument>
+        <argument id="Product_Type__c">
+          <value class="value" valueClass="string">Price Promise</value>
+        </argument>
+        <argument id="Status__c">
+          <value class="value" valueClass="string">Available</value>
+        </argument>
+        <argument id="Default_Radius__c">
+          <value class="value" valueClass="decimal">25.0</value>
+        </argument>
+        <argument id="Product_Make__c">
+          <value class="value" valueClass="string">Honda</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Global</value>
+        </argument>
+        <argument id="Franchise__c">
+          <value class="variable">
+            <path element="FranchiseIdNew"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Sellable_Product__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Conquest_Price__c" name="Conquest_Price__c" title="Conquest_Price__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Dealership__c" name="Dealership__c" title="Dealership__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Target__c" name="Default_Target__c" title="Default_Target__c">
+          <summary>Which List Price (1 = first in list, 4= last in list) should be used as the default?</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_1__c" name="Lead_Forecast_1__c" title="Lead_Forecast_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_2__c" name="Lead_Forecast_2__c" title="Lead_Forecast_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_3__c" name="Lead_Forecast_3__c" title="Lead_Forecast_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_4__c" name="Lead_Forecast_4__c" title="Lead_Forecast_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_1__c" name="List_Price_1__c" title="List_Price_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_2__c" name="List_Price_2__c" title="List_Price_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_3__c" name="List_Price_3__c" title="List_Price_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_4__c" name="List_Price_4__c" title="List_Price_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Pipeline__c" name="Pipeline__c" title="Pipeline__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Type__c" name="Product_Type__c" title="Product_Type__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Status__c" name="Status__c" title="Status__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Radius__c" name="Default_Radius__c" title="Default_Radius__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Make__c" name="Product_Make__c" title="Product_Make__c">
+          <summary>The makes available for sale for the dealership</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Franchise__c" name="Franchise__c" title="Franchise__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="19" title="Create Object: Sellable_Product__c=&gt;SP_PricePromiseUsed">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Sellable_Product__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">SP_PricePromiseUsed</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Price Promise - Used</value>
+        </argument>
+        <argument id="Conquest_Price__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="Default_Target__c">
+          <value class="value" valueClass="string">1</value>
+        </argument>
+        <argument id="Lead_Forecast_1__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_2__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_3__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_4__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_1__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_2__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_3__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_4__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Pipeline__c">
+          <value class="value" valueClass="string">Not Started</value>
+        </argument>
+        <argument id="Product_Type__c">
+          <value class="value" valueClass="string">Price Promise - Used</value>
+        </argument>
+        <argument id="Status__c">
+          <value class="value" valueClass="string">Available</value>
+        </argument>
+        <argument id="Default_Radius__c">
+          <value class="value" valueClass="decimal">25.0</value>
+        </argument>
+        <argument id="Product_Make__c">
+          <value class="value" valueClass="string">Used</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Global</value>
+        </argument>
+        <argument id="Franchise__c">
+          <value class="variable">
+            <path element="FranchiseIdUsed"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Sellable_Product__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Conquest_Price__c" name="Conquest_Price__c" title="Conquest_Price__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Dealership__c" name="Dealership__c" title="Dealership__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Target__c" name="Default_Target__c" title="Default_Target__c">
+          <summary>Which List Price (1 = first in list, 4= last in list) should be used as the default?</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_1__c" name="Lead_Forecast_1__c" title="Lead_Forecast_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_2__c" name="Lead_Forecast_2__c" title="Lead_Forecast_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_3__c" name="Lead_Forecast_3__c" title="Lead_Forecast_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_4__c" name="Lead_Forecast_4__c" title="Lead_Forecast_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_1__c" name="List_Price_1__c" title="List_Price_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_2__c" name="List_Price_2__c" title="List_Price_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_3__c" name="List_Price_3__c" title="List_Price_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_4__c" name="List_Price_4__c" title="List_Price_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Pipeline__c" name="Pipeline__c" title="Pipeline__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Type__c" name="Product_Type__c" title="Product_Type__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Status__c" name="Status__c" title="Status__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Radius__c" name="Default_Radius__c" title="Default_Radius__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Make__c" name="Product_Make__c" title="Product_Make__c">
+          <summary>The makes available for sale for the dealership</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Franchise__c" name="Franchise__c" title="Franchise__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="20" title="Create Object: Sellable_Product__c=&gt;SP_PricePromiseLease">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Sellable_Product__c</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">SP_PricePromiseLease</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Price Promise - Lease</value>
+        </argument>
+        <argument id="Conquest_Price__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="Default_Target__c">
+          <value class="value" valueClass="string">1</value>
+        </argument>
+        <argument id="Lead_Forecast_1__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_2__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_3__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="Lead_Forecast_4__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="List_Price_1__c">
+          <value class="value" valueClass="decimal">100</value>
+        </argument>
+        <argument id="List_Price_2__c">
+          <value class="value" valueClass="decimal">200</value>
+        </argument>
+        <argument id="List_Price_3__c">
+          <value class="value" valueClass="decimal">300</value>
+        </argument>
+        <argument id="List_Price_4__c">
+          <value class="value" valueClass="decimal">400</value>
+        </argument>
+        <argument id="Pipeline__c">
+          <value class="value" valueClass="string">Not Started</value>
+        </argument>
+        <argument id="Product_Type__c">
+          <value class="value" valueClass="string">Price Promise - Lease</value>
+        </argument>
+        <argument id="Status__c">
+          <value class="value" valueClass="string">Available</value>
+        </argument>
+        <argument id="Default_Radius__c">
+          <value class="value" valueClass="decimal">25.0</value>
+        </argument>
+        <argument id="Product_Make__c">
+          <value class="value" valueClass="string">Honda</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Global</value>
+        </argument>
+        <argument id="Franchise__c">
+          <value class="variable">
+            <path element="FranchiseIdNew"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Sellable_Product__c</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Conquest_Price__c" name="Conquest_Price__c" title="Conquest_Price__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Dealership__c" name="Dealership__c" title="Dealership__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Target__c" name="Default_Target__c" title="Default_Target__c">
+          <summary>Which List Price (1 = first in list, 4= last in list) should be used as the default?</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_1__c" name="Lead_Forecast_1__c" title="Lead_Forecast_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_2__c" name="Lead_Forecast_2__c" title="Lead_Forecast_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_3__c" name="Lead_Forecast_3__c" title="Lead_Forecast_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Lead_Forecast_4__c" name="Lead_Forecast_4__c" title="Lead_Forecast_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_1__c" name="List_Price_1__c" title="List_Price_1__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_2__c" name="List_Price_2__c" title="List_Price_2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_3__c" name="List_Price_3__c" title="List_Price_3__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=List_Price_4__c" name="List_Price_4__c" title="List_Price_4__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Pipeline__c" name="Pipeline__c" title="Pipeline__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Type__c" name="Product_Type__c" title="Product_Type__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Status__c" name="Status__c" title="Status__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Default_Radius__c" name="Default_Radius__c" title="Default_Radius__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Product_Make__c" name="Product_Make__c" title="Product_Make__c">
+          <summary>The makes available for sale for the dealership</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Sellable_Product__c&amp;field=Franchise__c" name="Franchise__c" title="Franchise__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="34" title="Create Object: Opportunity=&gt;PsoId">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Opportunity</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">PsoId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="AccountId">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Pre-Sales</value>
+        </argument>
+        <argument id="Name">
+          <value class="value" valueClass="string">ABC PSO</value>
+        </argument>
+        <argument id="StageName">
+          <value class="value" valueClass="string">Not Started</value>
+        </argument>
+        <argument id="CloseDate">
+          <value class="value" valueClass="date">1415318400000</value>
+        </argument>
+        <argument id="PSO_Dealership__c">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Global</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">ettest</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Opportunity</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=AccountId" name="AccountId" title="AccountId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="StageName" title="StageName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=CloseDate" name="CloseDate" title="CloseDate"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=PSO_Dealership__c" name="PSO_Dealership__c" title="PSO_Dealership__c">
+          <summary>Dealership of Pre-Sales Opportunity</summary>
+        </apiParam>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="37" title="On SF Opportunity new (Pre-Sales) screen">
+      <arguments>
+        <argument id="target">
+          <value class="uiTarget" uri="sf:ui:target?object=Opportunity&amp;action=New&amp;objectIdVariableName=OpportunityId&amp;recordType=Pre-Sales"/>
+        </argument>
+        <argument id="uiConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="sfUiTargetResultName">
+          <value class="value" valueClass="string">OpportunityId</value>
+        </argument>
+        <argument id="sfUiTargetResultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="navigate">
+          <value class="value" valueClass="string">IfNeccessary</value>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">On SF Opportunity new (Pre-Sales) screen</value>
+        </argument>
+        <argument id="windowSelection">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="windowSize">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="closeWindow"/>
+        <argument id="captureBefore"/>
+        <argument id="captureAfter"/>
+      </arguments>
+      <parameterValueSources/>
+      <clauses>
+        <clause name="substeps" testItemId="38">
+          <steps>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="39" title="Set the Close Date field to 2014-11-06">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:locator?name=CloseDate&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DOpportunity%26field%3DCloseDate"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=set"/>
+                </argument>
+                <argument id="value">
+                  <value class="value" valueClass="date">1415318400000</value>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Set the Close Date field to 2014-11-06</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="blur"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=CloseDate" name="value" title="Value">
+                  <type>
+                    <dateType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="blur" title="Tab off field">
+                  <summary>Whether the tab key should be pressed after the value is populated.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="40" title="Set the Stage picklist to Not Started">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:locator?name=StageName&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DOpportunity%26field%3DStageName"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=set"/>
+                </argument>
+                <argument id="value">
+                  <value class="value" valueClass="string">Not Started</value>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Set the Stage picklist to Not Started</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="blur"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="value" title="Value">
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="boundedValues">Not Started:Not Started|Prospecting:Prospecting|Meeting Established:Meeting Established|Presentation Completed:Presentation Completed|Contract Out for Signature:Contract Out for Signature|Contract Received:Contract Received|Contract Received - Return to Sales:Contract Received - Return to Sales|Contract Completed:Contract Completed|Pending Additional Info:Pending Additional Info|Ready to Go Live:Ready to Go Live|Deferred Live Date:Deferred Live Date|Confirmed Live/Active:Confirmed Live/Active|Order Modification:Order Modification|Closed Lost:Closed Lost|Pending Cancellation:Pending Cancellation|Saved:Saved|Cancelled before Going Live:Cancelled before Going Live|Cancelled:Cancelled|Closed Won:Closed Won</valueConstraint>
+                        <valueConstraint name="unrestricted">true</valueConstraint>
+                      </constraints>
+                    </choiceType>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="blur" title="Tab off field">
+                  <summary>Whether the tab key should be pressed after the value is populated.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="41" title="Set the Opportunity Name field to {AccountId}">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:locator?name=Name&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DOpportunity%26field%3DName"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=set"/>
+                </argument>
+                <argument id="value">
+                  <value class="variable">
+                    <path element="AccountId"/>
+                  </value>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Set the Opportunity Name field to {AccountId}</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="blur"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="value" title="Value">
+                  <type>
+                    <textType>
+                      <constraints>
+                        <valueConstraint name="maxLength">120</valueConstraint>
+                        <valueConstraint name="maxLines">1</valueConstraint>
+                      </constraints>
+                    </textType>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="blur" title="Tab off field">
+                  <summary>Whether the tab key should be pressed after the value is populated.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="42" title="Set the Dealership Name reference to {AccountId}">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:locator?name=AccountId&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DOpportunity%26field%3DAccountId"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=set"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Set the Dealership Name reference to {AccountId}</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="value">
+                  <value class="variable">
+                    <path element="AccountId"/>
+                  </value>
+                </argument>
+                <argument id="blur"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=AccountId" name="value" title="Value">
+                  <summary>The value to be populated.</summary>
+                  <type>
+                    <textType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="blur" title="Tab off field">
+                  <summary>Whether the tab key should be pressed after the value is populated.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="43" title="Click the Save button">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:locator?name=save&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DOpportunity%26action%3Dsave"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Save button</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+      <generatedParameters>
+        <apiParam group="result" name="sfUiTargetResultName" resultNameParameter="true" title="Result Name">
+          <summary>The name under which the resulting Opportunity Id will be stored.</summary>
+          <type>
+            <textType/>
+          </type>
+          <resultValueClasses>
+            <string>ApexObjectId</string>
+          </resultValueClasses>
+        </apiParam>
+        <apiParam group="result" name="sfUiTargetResultScope" title="Result Scope">
+          <summary>The life-span of the resulting identifiers.</summary>
+          <type>
+            <choiceType>
+              <constraints>
+                <valueConstraint name="boundedValues">Global|Folder|Test|Local</valueConstraint>
+              </constraints>
+            </choiceType>
+          </type>
+        </apiParam>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="61" title="On PricingWizard page">
+      <arguments>
+        <argument id="uiConnectionName">
+          <value class="value" valueClass="string">EdmundsTest</value>
+        </argument>
+        <argument id="target">
+          <value class="uiTarget" uri="ui:pageobject:target?pageId=pageobjects.PricingWizard"/>
+        </argument>
+        <argument id="navigate">
+          <value class="value" valueClass="string">Dont</value>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">On PricingWizard page</value>
+        </argument>
+        <argument id="windowSelection">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="windowSize">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="closeWindow"/>
+        <argument id="captureBefore"/>
+        <argument id="captureAfter"/>
+        <argument id="uiTargetUrl"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="62">
+          <steps>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="63" title="Click the Pricing Wizard">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=pricingWizard&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Pricing Wizard</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="104" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="64" title="Click the Continue To Pricing Wizard">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=continueToPricingWizard&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Continue To Pricing Wizard</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="105" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="65" title="Click the Confirm And Continue">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=confirmAndContinue&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Confirm And Continue</value>
+                </argument>
+                <argument id="wait">
+                  <value class="uiWait" uri="ui:wait:pageload?timeout=60"/>
+                </argument>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="106" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="66" title="Click the Confirm And Continue To The FW">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=confirmAndContinueToTheFW&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Confirm And Continue To The FW</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="107" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="67" title="Click the Dealership Setup">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=dealershipSetup&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Dealership Setup</value>
+                </argument>
+                <argument id="wait">
+                  <value class="uiWait" uri="ui:wait:pageload?timeout=60"/>
+                </argument>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="108" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="111" title="Click the Dealer Billing Address">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=DealerBillingAddress&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Dealer Billing Address</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="115" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="112" title="Set the Dealer Billing Address Street to 1620 26th Street">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=DealerBillingAddressStreet&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=set"/>
+                </argument>
+                <argument id="value">
+                  <value class="value" valueClass="string">1620 26th Street</value>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Set the Dealer Billing Address Street to 1620 26th Street</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="blur"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="value" title="Value">
+                  <type>
+                    <textType>
+                      <constraints>
+                        <valueConstraint name="mimeType">text/plain</valueConstraint>
+                      </constraints>
+                    </textType>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="blur" title="Tab off field">
+                  <summary>Whether the tab key should be pressed after the value is populated.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="116" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="113" title="Click the Billing Address Ok">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=BillingAddressOk&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Billing Address Ok</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="117" title="Sleep: {5}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">5</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="128" title="Click the Save">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=save&amp;pageId=pageobjects.PricingWizard"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Save</value>
+                </argument>
+                <argument id="wait"/>
+                <argument id="captureBefore"/>
+                <argument id="captureAfter"/>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" name="Sleep" testItemId="129" title="Sleep: {10}">
+              <arguments>
+                <argument id="sleepSecs">
+                  <value class="value" valueClass="decimal">10</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" name="ApexSoqlQuery" testItemId="121" title="SOQL Query: select BillingStreet from Account where id = '{AccountId}'=&gt;AccountRows">
+              <arguments>
+                <argument id="soqlQuery">
+                  <value class="compound">
+                    <parts>
+                      <value valueClass="string">select BillingStreet from Account where id = '</value>
+                      <variable>
+                        <path element="AccountId"/>
+                      </variable>
+                      <value valueClass="string">'</value>
+                    </parts>
+                  </value>
+                </argument>
+                <argument id="apexConnectionName">
+                  <value class="value" valueClass="string">EdmundsTest</value>
+                </argument>
+                <argument id="resultListName">
+                  <value class="value" valueClass="string">AccountRows</value>
+                </argument>
+                <argument id="resultScope">
+                  <value class="value" valueClass="string">Test</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.AssertValues" name="AssertValues" testItemId="123" title="Assert: {AccountRows.BillingStreet} EqualTo 1620 26th Street">
+              <arguments>
+                <argument id="expectedValue">
+                  <value class="variable">
+                    <path element="AccountRows"/>
+                    <path element="BillingStreet"/>
+                  </value>
+                </argument>
+                <argument id="actualValue">
+                  <value class="value" valueClass="string">1620 26th Street</value>
+                </argument>
+                <argument id="comparisonType">
+                  <value class="value" valueClass="string">EqualTo</value>
+                </argument>
+                <argument id="caseSensitive">
+                  <value class="value" valueClass="boolean">true</value>
+                </argument>
+                <argument id="retainDecimals">
+                  <value class="value" valueClass="boolean">true</value>
+                </argument>
+                <argument id="nullGreater">
+                  <value class="value" valueClass="boolean">true</value>
+                </argument>
+                <argument id="matchMultiLine">
+                  <value class="value" valueClass="boolean">true</value>
+                </argument>
+                <argument id="matchDotAll">
+                  <value class="value" valueClass="boolean">true</value>
+                </argument>
+                <argument id="failureMessage">
+                  <value class="value" valueClass="string">Shipping Street not updated</value>
+                </argument>
+              </arguments>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+      <generatedParameters>
+        <apiParam group="target" name="uiTargetUrl" title="Web Page">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

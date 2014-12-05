@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testProject selectedWebBrowserType="Chrome">
+  <title>/Training/.testproject</title>
+  <configPath>config</configPath>
+  <testsPath>tests</testsPath>
+  <templatesPath>templates</templatesPath>
+  <sourcePath>src</sourcePath>
+  <secureStoragePath>.secrets</secureStoragePath>
+  <browserDebugPort>0</browserDebugPort>
+  <connectionClasses>
+    <connectionClass name="sf">
+      <connections>
+        <connection name="EdmundsTest">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="516c90ff-16b4-4435-80dd-ebf12faf716a" url="sf:user=provaradmin@edmunds.com.ettest;password={password};securityToken={securityToken};environment=SANDBOX;userLoginUrl=http://test.salesforce.com"/>
+          </connectionUrls>
+        </connection>
+        <connection name="DemoOrg">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="dfe64095-bed1-4bc3-bf3d-e5e04452fc00" url="sf:user=df13@makepositive.com;password={password};environment=PROD_DEV"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="google">
+      <connections>
+        <connection name="Gmail">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="f66e93a8-494f-464a-ad94-fe22c07436da" url="google:user=cso@edmunds.com;accessToken={accessToken};refreshToken={refreshToken};expiry=1417448902736"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+  </connectionClasses>
+</testProject>
